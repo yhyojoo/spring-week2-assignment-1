@@ -1,9 +1,9 @@
 package com.codesoom.assignment.models;
 
 public class Task {
-    private  Long id;
+    private Long id;
 
-    private  String title;
+    private String title;
 
     public Long getId() {
         return id;
@@ -21,7 +21,8 @@ public class Task {
         this.title = title;
     }
 
-    public String toString(){
+    @Override
+    public String toString() {
         return "Task - title: " + title;
     }
 }
